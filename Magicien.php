@@ -9,10 +9,5 @@ class Magicien
         $this->magie = $magie;
         $this->bouclier = $bouclier;
     }
-
-    public function attaque() 
-    {
-
-    }
 }
 ?>

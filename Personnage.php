@@ -9,14 +9,14 @@ class Personnage
 
     public function __construct($nom, $prenom, $age)
     {
-        echo "Initialization of constructor";
+        echo "Initialization of constructor <br />";
         $this->nom = $nom;
         $this->prenom = $prenom;
         $this->age = $age;
     }
     public function deplace() 
     {
-        echo "Le personnage $this->prenom est en train de ce deplacer";
+        echo "Le personnage " . $this->prenom . " est en train de ce deplacer <br />";
     }
 
     public function age() {
@@ -25,6 +25,11 @@ class Personnage
 
     public static function test() {
         return self::$boya;
+    }
+
+    public function attack(Personnage $perso)
+    {
+        echo "" . $this->prenom . " attaque le personnage " . $perso->prenom . "<br />";
     }
 }
 
